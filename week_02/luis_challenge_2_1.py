@@ -15,9 +15,10 @@ def mainFunc():
         round_outcome = determine_winner(player_choice, computer_choice)
         print('RESULT: \nComputer: ', computer_choice,
               '\nPlayer: ', player_choice, '\n')
+        print(f'rount outcome: {round_outcome}')
         if (round_outcome == player_choice):
             score['Player'] += 1
-        elif (player_choice == round_outcome):
+        elif (round_outcome == computer_choice):
             score['Computer'] += 1
         else:
             score['Ties'] += 1
